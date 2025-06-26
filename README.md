@@ -8,38 +8,38 @@
 
 ## Notebook Structure
 
-### 📊 **Section 1: Exploratory Data Analysis (Cells 1-19)**
+### 📊 **Section 1: Exploratory Data Analysis **
 - **Data Loading**: Excel file with 12,311 flights
 - **Basic Statistics**: 25% delay rate, 668-minute max delay
 - **Time Patterns**: Thursday worst day, early morning peak delays
 - **Operational Analysis**: Turnaround time most critical factor
 - **Visualizations**: 4 EDA plots showing delay patterns
 
-### 🔧 **Section 2: Data Preprocessing (Cells 20-29)**
+### 🔧 **Section 2: Data Preprocessing **
 - **Missing Values**: 5 rows removed (99.96% data retention)
 - **Date Parsing**: Convert strings to datetime objects
 - **Target Creation**: Binary delay indicator (>15 minutes)
 - **Categorical Encoding**: Airport, aircraft, and operational features
 
-### ⚙️ **Section 3: Feature Engineering (Cells 30-38)**
+### ⚙️ **Section 3: Feature Engineering **
 - **Time Features**: Hour, day, month, peak hours, weekends
 - **Operational Features**: Load factor, turnaround time, capacity categories
 - **Risk Features**: Compound risk indicators for high-risk scenarios
 - **Final Output**: 24 engineered features ready for modeling
 
-### 🤖 **Section 4: Machine Learning Models (Cells 39-49)**
+### 🤖 **Section 4: Machine Learning Models **
 - **Data Split**: 80% train (9,844 flights), 20% test (2,462 flights)
 - **Models Trained**: Logistic Regression, Random Forest, Gradient Boosting, SVM
 - **Best Model**: Gradient Boosting with 0.759 ROC-AUC score
 - **Feature Importance**: Turnaround time (37.2%) most important
 
-### 📈 **Section 5: Final Visualizations (Cells 50-55)**
+### 📈 **Section 5: Final Visualizations **
 - **Plot 1**: Model ROC-AUC comparison chart
 - **Plot 2**: Top 8 feature importance rankings
 - **Plot 3**: Confusion matrix heatmap
 - **Plot 4**: Prediction probability distribution
 
-### 💾 **Section 6: Model Persistence (Cells 56-58)**
+### 💾 **Section 6: Model Persistence **
 - **Model Export**: `best_model_gradient_boosting.joblib`
 - **Results Export**: CSV files with metrics and feature importance
 - **PDF Report**: Automated summary generation
