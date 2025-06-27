@@ -58,6 +58,17 @@
 - **Accuracy**: 78.7%
 - **Precision**: 71.6% (Low false alarm rate)
 - **Recall**: 24.6% (Captures 1 in 4 delays)
+- Which Model is "Better"?
+
+  The "best" model depends on the business objective:
+
+
+   * If the goal is to be very confident that a predicted delay is a real delay (to avoid wasting
+     resources on false alarms), then the Tuned Gradient Boosting model is preferable due to its higher
+     precision.
+   * If the goal is to catch as many potential delays as possible (even at the cost of some false
+     alarms), then the Random Forest model might be a better choice because of its higher recall.
+
 
 ## Deployment Plan
 
